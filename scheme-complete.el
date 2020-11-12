@@ -127,10 +127,6 @@
 ;;
 ;; (setq *scheme-current-implementation* whatever)
 
-(defvar *scheme-imported-modules* '())
-(defvar *scheme-complete-module-cache* (make-hash-table :test #'equal))
-(defvar *scheme-library-includes-cache* (make-hash-table :test #'equal))
-(defvar *scheme-include-globals-cache* (make-hash-table :test #'equal))
 
 (defvar *scheme-current-implementation* nil)
 (make-variable-buffer-local '*scheme-current-implementation*)
